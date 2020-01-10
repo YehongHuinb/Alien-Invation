@@ -6,7 +6,6 @@ from pygame.sprite import Group
 
 
 def run_game():
-    # Initialize the game and build a screen class
     pygame.init()
     ai_settings = Settings()
     screen = pygame.display.set_mode(
@@ -16,9 +15,7 @@ def run_game():
     pygame.display.set_caption('Alien Invasion')
     bullets = Group()
 
-    # Start the circulation of the game
     while True:
-        # Monitor the keyboard and mouse event
         gf.check_event(ai_settings, screen, ship, bullets)
         ship.update()
         gf.update_bullets(bullets)

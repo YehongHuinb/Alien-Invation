@@ -19,3 +19,7 @@ class Settings:
         self.screen = Screen_set(600, 450, (230, 230, 230))
         self.bullet = Bullet_set(0.5, 3, 15, (60, 60, 60))
         self.ship_speed = 0.6
+        self.alien_speed = 0.5
+        self.fleet_drop_speed = 5
+        self.fleet_direction = 1
+        self.ship_limit = 3
